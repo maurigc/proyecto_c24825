@@ -16,6 +16,14 @@ ul{
 	flex-direction: row;
 }
 
+.encabezado__nav a:hover{
+	color: #FFB72B;
+}
+
+.botonConocer h2:hover{
+	color: #C85C5C;
+}
+
 .encabezado__nav a{
 	text-decoration: none;
 	color: #C85C5C;
@@ -137,10 +145,10 @@ ul{
 }
 
 .principal__nosotros img{
-		border-radius: 5px;
-		border: 2px solid #C85C5C;
-		box-shadow: 1px 1px 10px black;
-	}
+	border-radius: 5px;
+	border: 2px solid #C85C5C;
+	box-shadow: 1px 1px 10px black;
+}
 
 main{
 	background-color: #686D76;
@@ -486,6 +494,12 @@ main{
 	.imagenFondo img{
 		width: 90%;
 		height: 90%;
+		transition: all 2s;
+	}
+
+	.imagenFondo img:hover{
+		width: 100%;
+		height: 100%;
 	}
 
 	.presentacion p{
@@ -554,6 +568,22 @@ main{
 		height: 100%;
 	}
 
+	.imagen__nosotros img{
+		transition: height 2s;
+	}
+
+	.imagen__nosotros img:hover{
+		height: 500px;
+	}
+
+	.imagen__nosotros2 img{
+		transition: height 2s;
+	}
+
+	.imagen__nosotros2 img:hover{
+		height: 500px;
+	}
+
 /* ---> MODIFICACION FOOTER VISTA DESKTOP <--- */
 
 	footer{
@@ -571,10 +601,16 @@ main{
 
 	.footer__nombre{
 		grid-area: nombre;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.footer__redes{
 		grid-area: redes;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 
 	.footer__pie{
@@ -583,6 +619,18 @@ main{
 
 	.footer__logo img{
 		width: 200px;
+	}
+
+	.footer__nombre h2:hover{
+		font-size: 40px;
+	}
+
+	.footer__nombre h2{
+		transition: font-size 1s;
+	}	
+	
+	.footer__nombre h2:hover{
+		font-size: 30px;
 	}
 
 }

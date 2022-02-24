@@ -12,6 +12,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<!-- link aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- link css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -50,7 +52,7 @@
 		</header>
 		<main class="principal__index bg--principal">
 		    <!-- Apertura titulo y parrafo fondo -->	
-			<div class="presentacion">
+			<div class="presentacion" data-aos="fade-right">
 				<h1>PELUQUERIA CANINA</h1>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum ipsa maiores temporibus. Consectetur obcaecati vel nemo aperiam quia autem dolore facere asperiores sit. Soluta eveniet expedita omnis officiis, adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam, debitis nesciunt nobis numquam non sed sint maiores amet tempore unde reprehenderit ut quod iusto vitae magni architecto voluptates neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores quae ipsum qui repudiandae nam ipsam, voluptas quasi, odio in dolores dicta dignissimos? Amet minus quidem doloremque laborum nihil, quod!
@@ -58,11 +60,11 @@
 			</div>
 		    <!-- cierre titulo y parrafo fondo -->
 		     <!-- Apertura imagen Fondo -->
-			<div class="imagenFondo"> 
+			<div class="imagenFondo" data-aos="fade-left"> 
 				<img src="assets/img/perroPrincipal.png" alt="imagen fondo">
 			</div>
 		    <!-- Cierre imagen fondo -->
-		    <div class="botonConocer">
+		    <div class="botonConocer" data-aos="fade-up">
 		    	<a href="views/Nosotros.html">
 		    		<h2>Conócenos mejor</h2>
 		    	</a>
@@ -95,5 +97,14 @@
 			</div>
 		</footer>
 	</div>
+	
+	<!-- script AOS animaciones -->
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
+
 </body>
+
 </html>
