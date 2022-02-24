@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto - Perruqueando</title>
+	<!-- noto sans font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@200&display=swap" rel="stylesheet">
+	<!-- oswald font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div class="contenidoPrincipal">
+		<header class="encabezado style">
+		    <!-- Apertura Logo -->
+			<div class="encabezado__logo">
+				<a href="../index.html">
+					<img src="../assets/img/logoPelu2.png" alt="logo">
+					<h1>Perruqueando</h1>
+				</a>	
+			</div>
+		    <!-- Cierre Logo -->
+		    <!-- Apertura Navegacion -->
+			<nav class="encabezado__nav">
+				<ul>
+					<li class="nav__item ">
+						<a href="../index.html">Inicio</a>
+					</li>
+					<li class="nav__item ">
+						<a href="Nosotros.html">Nosotros</a>
+					</li>
+					<li class="nav__item ">
+						<a href="servicios.html">Servicios</a>
+					</li>
+					<li class="nav__item ">
+						<a href="galeria.html">Galeria</a>
+					</li>
+					<li class="nav__item ">
+						<a href="#">Contacto</a>
+					</li>			
+				</ul>
+			</nav>
+		    <!-- Cierre Navegacion -->
+		</header>
+		<main class="contenedorContacto">
+			<div class="principal__contacto">
+				<!-- apertura titulo -->
+				<div class="titulo__contacto">
+					<h1>CONTACTANOS</h1>
+				</div>
+				<!-- cierre titulo -->
+				<div class="card__contacto">
+					<!-- apertura info contacto -->
+					<div class="ubi__contacto">
+						<img src="../assets/img/ubicacionIcon.png" alt="logo ubi">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301.09097425521765!2d-64.16980773786918!3d-31.374001178136137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299e0a4535245%3A0x981606991d1e9b8d!2sPerruqueando!5e0!3m2!1ses!2sar!4v1642978632400!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<div class="telefono__contacto">
+						<img src="../assets/img/whatsappIcon.png" alt="logo telefono">
+						<h2>3516228393</h2>
+					</div>
+					<div class="mail__contacto">
+						<img src="../assets/img/mailIcon.png" alt="logo mail">
+						<h2>perruqueando@mail.com</h2>
+					</div>
+					<!-- cierre info contacto -->
+					<div class="horario__contacto">
+						<p>Horarios: Lun a Sabado de 9hs a 17hs.</p>
+					</div>
+					<!-- inicio formulario -->
+					<form action="#" class="formulario">
+						<label for="nombre" class="nombre__formulario paddingForm">
+							<input type="name" name="nombre" placeholder="Nombre y Apellido" class=" customBox">
+						</label>
+						<label for="mail" class="mail__formulario paddingForm">
+							<input type="name" name="mail" placeholder="mail@mail.com" class=" customBox" >
+						</label>
+						<div class="opcion__formulario paddingForm">
+						Turno
+							<input type="radio" name="opcion" value="turno">
+						Consulta
+							<input type="radio" name="opcion" value="atencion">	
+						</div>
+						<div class="comentario__formulario paddingForm">
+							<textarea name="comentario" id="" cols="55" rows="10" placeholder="Comentario" class="customBox"></textarea>
+						</div>
+						<div class="botones__formulario">
+							<input type="reset" value="resetear">
+							<input type="submit" value="enviar">
+						</div>
+					</form>
+					<!-- cierre formulario -->
+					<div class="imagen__contacto">
+						<img src="../assets/img/imagenContacto.jpg" alt="imagen contacto">
+					</div>
+				</div>	
+			</div>	
+		</main>	
+		<!-- apertura footer -->
+		<footer class="pie pieStyle">
+			<!-- apertura logo -->
+			<div class="footer__logo">
+				<a href="#">
+					<img src="../assets/img/logoPelu2.png" alt="logo">
+				</a>
+			</div>	
+			<!--cierre logo -->
+			<!-- Apertura subtitulo footer -->
+			<div class="footer__nombre">
+				<h2>Josefina Funes Quero</h2>
+			</div>
+			<!-- redes sociales -->
+			<div class="footer__redes">
+				<a href="https://www.facebook.com/dejandoloslindos" target="_blank">
+					<img src="../assets/img/facebook.png" alt="logo facebook" class="footer__face">
+				</a>
+				<a href="https://www.instagram.com/perruqueando/tagged/" target="_blank">
+					<img src="../assets/img/instagram.png" alt="logo insta" class="footer__insta">
+				</a>
+			</div>
+			<div class="footer__pie">
+				<h3>Todos los derechos reservados 2021-22</h3>
+			</div>
+		</footer>
+		<!-- cierre footer -->
+	</div>
+	
+</body>
+</html>

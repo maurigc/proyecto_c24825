@@ -1,0 +1,1034 @@
+*{
+	font-family: sans-serif;
+	margin: 0px;
+}
+
+/* modificacion header dos vistas */
+
+li{
+	list-style: none;
+	margin: 1rem;
+	padding: 5px;
+}
+
+ul{
+	display: flex;
+	flex-direction: row;
+}
+
+.encabezado__nav a{
+	text-decoration: none;
+	color: #C85C5C;
+	font-weight: bolder;
+}
+
+.encabezado__logo a{
+	text-decoration: none;
+	color: black;
+}
+
+.style{
+	background-color: #A7D129;
+	box-shadow: 0px 1px 10px black;
+	z-index: 98;
+}
+
+.pieStyle{
+	background-color: #C8C6C6;
+	box-shadow: 0px 1px 10px black;
+}
+
+
+.contenidoPrincipal{
+	display: grid;
+	grid-template-areas: 
+	"encabezado"
+	"principal"
+	"pie";
+	grid-template-columns: 100%;
+	grid-template-rows: 150px 1000px 230px;
+	width: 100%;
+	height: 100%;
+	}
+
+	header{
+		grid-area: encabezado;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	main{
+		grid-area: principal;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	footer{
+		grid-area: pie;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+
+.footer__pie{
+		background-color: #B3E283;
+}
+
+.footer__nombre h2{
+		color: #C85C5C;
+}
+
+/* modificacion titulo main index general */
+
+.presentacion h1{
+	font-size: 50px;
+	color: #C85C5C;
+	font-family: oswald;
+	text-shadow: 1px 1px 5px black;
+}
+
+.presentacion p{
+		font-family: noto sans;
+		border-bottom: 2px solid #A7D129;
+		border-top: 2px solid #A7D129;
+		color: whitesmoke;
+		text-align: center;
+}
+
+.imagenFondo img{	
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px black;
+}
+
+.botonConocer h2{
+	text-align: center;
+	font-size: 25px;
+	font-family: oswald;
+	background-color: #A7D129;
+	width: 200px;
+	border-radius: 10px;
+}	
+
+.botonConocer a{
+	text-decoration: none;
+	color: #373A40;
+}
+
+.principal__nosotros h1{
+	color: #C85C5C;
+	font-family: oswald;
+	text-align: left;
+	text-shadow: 1px 1px 5px black;
+}
+
+.principal__nosotros h2{
+	color: #A7D129;
+	font-family: noto sans;
+	font-size: 20px;
+}
+
+.principal__nosotros p{
+	font-family: noto sans;
+	color: whitesmoke;
+}
+
+.principal__nosotros img{
+		border-radius: 5px;
+		border: 2px solid #C85C5C;
+		box-shadow: 1px 1px 10px black;
+	}
+
+main{
+	background-color: #686D76;
+}
+
+
+/**************************************
+ * MEDIA QUERIES PARA VERSION MOBILE  *
+ **************************************/
+
+@media only screen and (max-width: 768px) {
+	li{
+		font-size: 15px;
+		margin: 0px;
+	}
+
+	ul{
+		justify-content: center;
+		padding: 0px;
+	}
+
+	.encabezado__logo{
+		text-align: center;
+	}
+
+	.encabezado__logo img{
+		width: 90px;
+		height: auto;
+	}
+
+	.encabezado__logo h1{
+		font-size: 20px;
+		font-family: oswald;
+	}
+
+	.presentacion{
+		text-align: center;
+	}
+
+	.presentacion p{
+		font-size: 15px;
+	}
+
+	.presentacion h1{
+		text-align: left;
+		padding-left: 10px;
+		
+	}	
+
+	.imagenFondo{
+		text-align: center;
+		
+	}
+
+	.imagenFondo img{
+		width: 85%;
+		height: auto;
+	}
+
+	.botonConocer{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+
+	/* ---> MODIFICACION NOSOTROS VISTA MOBILE <--- */
+
+	.principal__nosotros{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-between;
+		}
+
+	.principal__nosotros img{
+		width: 95%;
+	}
+
+	.principal__nosotros h1{
+		font-size: 40px;
+	}
+
+	.principal__nosotros h2{
+		font-size: 20px;
+	}
+
+	.principal__nosotros p{
+		font-size: 15px;
+	}
+
+	/* ---> MODIFICACION SERVICIOS VISTA MOBILE <--- */
+
+	.principal__servicios{
+		text-align: center;
+		justify-content: space-around;
+	}
+
+	.principal__servicios h2{
+		font-family: noto sans;
+		color: #A7D129;
+		font-size: 40px;
+		text-shadow: 1px 1px 5px black;
+	}
+
+	.baño__servicios, .corte__servicios, .adopciones__servicios, .traslados__servicios{
+		background-color: #C85C5C;
+		box-shadow: 1px 1px 10px #FFFFFF;
+	}
+
+	/* ---> MODIFICACION MAIN GALERIA VISTA MOBILE <--- */
+
+	.principal__galeria{
+		display: grid;
+		grid-template-areas: 
+		"galeria galeria"
+		"imgUno	imgDos"
+		"imgTres imgCuatro";
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 20% 40% 40%;
+	}
+
+	.titulo__galeria{
+		grid-area: galeria;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.imagenUno{
+		grid-area: imgUno;
+	}
+
+	.imagenDos{
+		grid-area: imgDos;
+	}
+
+	.imagenTres{
+		grid-area: imgTres;
+	}
+
+	.imagenCuatro{
+		grid-area: imgCuatro;
+	}
+
+	.principal__galeria img{
+		width: 99%;
+		height: 80%;
+		box-shadow: 1px 1px 10px black;
+	}
+
+	.titulo__galeria h1{
+		font-size: 50px;
+		font-family: oswald;
+		color: #C85C5C;
+		text-shadow: 1px 1px 5px black;
+		border-bottom: 2px solid #A7D129;
+	}
+
+	/* ---> MODIFICACION MAIN CONTACTO VISTA MOBILE <--- */
+			
+	.card__contacto{
+		display: grid;
+		grid-template-areas: 
+		"ubi ubi" 
+		"tel mail"
+		"horario horario"
+		"form form"
+		"img img";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 25% 12% 5% 33% 25%;
+		text-align: center;
+	}
+
+
+	.ubi__contacto{
+		grid-area: ubi;
+	}
+
+	.telefono__contacto{
+		grid-area: tel;
+		font-family: noto sans;
+		font-size: 10px;
+		color: #A7D129;
+	}
+
+	.mail__contacto{
+		grid-area: mail;
+		font-family: noto sans;
+		font-size: 10px;
+		color: #A7D129;
+	}
+
+	.horario__contacto{
+		grid-area: horario;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #C85C5C;
+		box-shadow: 1px 1px 10px #ffffff;
+		font-weight: bolder;
+		font-family: noto sans;
+	}
+
+	.formulario{
+		grid-area: form;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.imagen__contacto{
+		grid-area: img;
+	}
+
+	.titulo__contacto h1{
+		font-size: 50px;
+		font-family: oswald;
+		color: #C85C5C;
+		text-shadow: 1px 1px 5px black;
+		border-bottom: 2px solid #A7D129;
+	}
+
+	.ubi__contacto iframe{
+		width: 90%;
+		height: 50%;
+	}
+
+	.imagen__contacto img{
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	/* ---> MODIFICACION FORMULARIO CONTACTOS VISTA MOBILE <--- */
+
+	.customBox{
+		border-radius: 5px;
+		width: 80%;
+		height: auto;
+		background-color: #B3E283;
+		border: 1px solid #E7ED9B;
+		opacity: 80%;
+	}
+
+	.paddingForm{
+		padding-bottom: 5px;
+	}
+
+	.botones__formulario input{
+		background-color: #A7D129;
+		border: 1px solid #A7D129;
+		border-radius: 5px;
+		font-weight: bolder;
+		font-family: noto sans;
+	}
+
+	 /*---> MODIFICACION FOOTER VISTA MOBILE ---> */
+
+	.footer__logo img{
+		width: 100px;
+		height: auto;
+	}
+
+	.footer__pie h3{
+		font-size: 12px;
+	}
+
+	.footer__redes{
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+
+/************************************
+ * MEDIA QUERIES PARA VISTA DESKTOP *
+ ************************************/
+@media only screen and (min-width: 1024px){
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.encabezado__logo{
+		text-align: center;
+		padding-left: 50px;
+	}
+
+	.encabezado__logo h1{
+		font-size: 30px;
+		font-family: oswald;;
+	}
+
+	.encabezado__logo img{
+		width: 100px;
+	}
+
+	.encabezado__nav{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	li{
+		font-size: 20px;
+		margin: 10px;
+	}
+
+/* ---> MODIFICACION INDEX VISTA DESKTOP <---  */
+
+	.principal__index{
+		display: grid;
+		grid-template-areas: 
+		"texto img"
+		"boton boton";
+		grid-template-columns: 30% 70%;
+		grid-template-rows: 90% 10%;
+		padding-top: 20px;
+	}
+
+	.presentacion{
+		grid-area: texto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.imagenFondo{
+		grid-area: img;
+		text-align: center;
+	}
+
+	.botonConocer{
+		grid-area: boton;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.imagenFondo img{
+		width: 90%;
+		height: 90%;
+	}
+
+	.presentacion p{
+		font-size: 20px;
+	}
+
+	.presentacion h1{
+		padding-bottom: 10px;
+	}
+
+/* ---> MODIFICACION NOSOTROS VISTA DESKTOP <--- */
+
+	.principal__nosotros{
+		display: grid;
+		grid-template-areas:
+		"titulo titulo" 
+		"img1 texto1"
+		"texto2 img2";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 10% 45% 45%;
+	}
+
+	.titulo__nosotros{
+		grid-area: titulo;
+	}
+
+	.imagen__nosotros {
+		grid-area: img1;
+		text-align: center;
+	}
+
+	.contenido__nosotros{
+		grid-area: texto1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.imagen__nosotros2{
+		grid-area: img2;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.contenido__nosotros2{
+		grid-area: texto2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: right;
+	}
+
+	.titulo__nosotros h1{
+		font-size: 60px;
+	}
+
+	.principal__nosotros h2{
+		font-size: 40px;
+	}
+
+	.principal__nosotros p{
+		font-size: 20px;
+	}
+
+	.principal__nosotros img{
+		height: 100%;
+	}
+
+/* ---> MODIFICACION FOOTER VISTA DESKTOP <--- */
+
+	footer{
+		display: grid;
+		grid-template-areas: 
+		"logo nombre redes"
+		"pie pie pie";
+		grid-template-columns: 33.3% 33.3% 33.3%;
+		grid-template-rows: 90% 10%;
+	}
+
+	.footer__logo{
+		grid-area: logo;
+	}
+
+	.footer__nombre{
+		grid-area: nombre;
+	}
+
+	.footer__redes{
+		grid-area: redes;
+	}
+
+	.footer__pie{
+		grid-area: pie;
+	}
+
+	.footer__logo img{
+		width: 200px;
+	}
+
+}
+/*	
+	li{
+		list-style: none;
+		margin: 1rem;
+		font-size: 20px;
+	}
+
+	.bg--principal{
+		background-color: #FBD148;
+		padding-top: 40px;
+	}
+
+
+	.contenidoPrincipal{
+		display: grid;
+		grid-template-areas: 
+		"encabezado encabezado"
+		"principal principal"
+		"pie pie";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 130px 800px 150px;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	header{
+		grid-area: encabezado;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;	
+		position: sticky;
+		top: 0px;
+		
+	}
+
+	main{
+		grid-area: principal;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	footer{
+		grid-area: pie;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.encabezado__logo img{
+		width: 250px;
+		height: auto;
+	}
+
+	.encabezado__nav{
+		position: relative;
+		top: 3rem;
+	}
+
+	/* ---> MODIFICACION INDEX VISTA DESKTOP <--- */
+
+	/*.presentacion{
+		width: 50%;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.presentacion p{
+		text-align: center;
+		font-size: 20px;
+		font-weight: bolder;
+		padding-top: 1rem;
+	}
+
+	.imagenFondo img{
+		width: 80%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 1px 1px 10px black;
+	}
+
+	.principal__index{
+		padding-top: 10%;
+	}*/
+
+	/* ---> MODIFICACION NOSOTROS VISTA DESKTOP <--- */
+
+	/*.principal__nosotros{
+		display: grid;
+		grid-template-areas: 
+		"titulo titulo"
+		"texto1 img1"
+		"img2 texto2";
+		grid-template-columns: 40% 40%;
+		grid-template-rows: 10% 45% 45%;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+	}
+
+	.titulo__nosotros{
+		grid-area: titulo;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.contenido__nosotros{
+		grid-area: texto1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: right;
+	}
+
+	.imagen__nosotros{
+		grid-area: img1;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.contenido__nosotros2{
+		grid-area: texto2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	.imagen__nosotros2{
+		grid-area: img2;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.titulo__nosotros h1{
+		font-size: 40px;
+		font-family: shizuru;
+		text-shadow: 1px 1px 1px black;
+		color: #C85C5C;
+	}
+
+	.principal__nosotros h2{
+		font-size: 40px;
+		font-weight: bolder;
+		color: #B2EA70;
+		text-shadow: 1px 1px 1px black;
+	}
+
+	.principal__nosotros p{
+		font-size: 20px;
+		padding-top: 20px;
+	}
+
+	.principal__nosotros img{
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: 1px 1px 10px black;
+	}*/
+
+	/* ---> MODIFICACION GALERIA VISTA DESKTOP */
+
+	/*.contenido__galeria{
+		display: grid;
+		grid-template-areas: 
+		"titulo titulo"
+		"imgUno imgDos"
+		"imgTres imgCuatro";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 10% 45% 45%;
+		height: 100%;
+		width: 100%;
+		justify-content: center;
+		margin: 3%;
+		grid-gap: 10px;
+	}
+
+	.titulo__galeria{
+		grid-area: titulo;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.imagenUno{
+		grid-area: imgUno;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.imagenDos{
+		grid-area: imgDos;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.imagenTres{
+		grid-area: imgTres;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.imagenCuatro{
+		grid-area: imgCuatro;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.titulo__galeria h1{
+		color: #C85C5C;
+		font-size: 70px;
+		font-family: shizuru;
+		text-shadow: 1px 1px 1px black;
+		text-align: center;
+	}
+
+	.contenido__galeria img{
+		border-radius: 10px;
+		box-shadow: 1px 1px 10px black;
+		width: 80%;
+	}*/
+
+	/* ---> MODIFICACION SERVICIOS VISTA DESKTOP */
+
+	/*.contenido__servicios{
+		display: grid;
+		grid-template-areas: 
+		"baño corte"
+		"adopciones adopciones";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		width: 80%;
+		height: 80%;
+	}
+
+	.baño__servicios{
+		grid-area: baño;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.corte__servicios{
+		grid-area: corte;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.adopciones__servicios{
+		grid-area: adopciones;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.adopciones__servicios img{
+		
+	}
+	}
+
+	.principal__servicios img{
+		height: 80%;
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}*/
+
+
+	/* ---> MODIFICACION CONTACTOS VISTA DESKTOP <--- */
+
+	/*.principal__contacto{
+		display: grid;
+		grid-template-areas: 
+		"titulo titulo"
+		"img card";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 20% 80% ;
+		height: 100%;
+		width: 100%;
+	}
+
+	.titulo__contacto{
+		grid-area: titulo;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.imagen__contacto{
+		grid-area: img;
+		display: flex;
+		justify-content: center;
+	}
+
+	.card__contacto{
+		grid-area: card;
+	}
+
+	.titulo__contacto h1{
+		color: #C85C5C;
+		font-size: 50px;
+		font-family: shizuru;
+		text-shadow: 1px 1px 1px black;
+	}
+
+	.imagen__contacto img{
+		border-radius: 10px;
+		width: 80%;
+		height: 80%;
+		box-shadow: 1px 1px 10px black;
+	}
+
+	.ubi__contacto{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.ubi__contacto iframe{
+		width: 400px;
+		height: 30px;
+		padding-top: 1rem;
+	}
+
+	.telefono__contacto{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.telefono__contacto h2{
+		width: 400px;
+		height: 30px;
+		color: #8BDB81;
+		text-shadow: 1px 1px 1px green;
+		text-align: center;
+		padding-top: 1rem;
+	}
+
+	.mail__contacto{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.mail__contacto h2{
+		width: 400px;
+		height: 30px;
+		text-align: center;
+		color: #8BDB81;
+		text-shadow: 1px 1px 1px green;
+		padding-top: 1rem;
+	}*/
+
+	/* ---> MODIFICACION FORMULARIO CONTACTOS VISTA DESKTOP <--- */
+
+	/*.formulario{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.botones__formulario input{
+		background-color: #E7ED9B;
+		border: 1px solid #E7ED9B;
+		border-radius: 5px;
+	}
+
+	.paddingForm{
+		padding: 5px;
+	}
+
+	.customBox{
+		width: 50%;
+		border-radius: 5px;
+		background-color: #E7ED9B;
+		border: 1px solid #E7ED9B;
+	}
+
+	.contenedorContacto{
+		background-color: #FBD148;
+	}*/
+
+	/* ---> MODIFICACION FOOTER VISTA DESKTOP <---*/
+
+	/*.pie{
+		display: grid;
+		grid-template-areas: 
+		"logo nombre nombre"
+		"logo redes redes"
+		"pie pie pie";
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 40% 40% 20%;
+	}
+
+	.footer__logo{
+		grid-area: logo;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+
+	.footer__redes{
+		grid-area: redes;
+		padding-left: 230px;
+	}
+
+	.footer__pie{
+		grid-area: pie;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.footer__nombre{
+		grid-area: nombre;
+		padding-left: 175px;
+		color: #6A5495;	
+	}
+
+	.footer__logo img{
+		width: 250px;
+		height: auto;
+	}
+
+	.footer__redes img{
+		margin: 0rem 1rem;
+	}	
+
+	.footer__pie h3{
+		margin-top: 0px;
+	}
+}*/
