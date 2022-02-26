@@ -635,6 +635,11 @@ main{
 
 }*/
 
+.imagenNav{
+	width: 150px;
+	height: 150px;
+}
 
-
-
+.navbarNav ul{
+	text-align: right;
+}
