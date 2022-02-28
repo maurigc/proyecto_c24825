@@ -29,40 +29,41 @@
 		<!-- header -->
 		<header class="row">
 			<div class="col-lg-12 col-12">
-				<nav class="navbar navbar-expand-lg navbar-light bg-success align-items-end">
+				<nav class="navbar navbar-expand-lg navbar-light bg-lightGreen d-flex align-items-end">
 				  <a class="navbar-brand" href="#">
 				  	<img src="assets/img/logoPelu2.png" alt="logo" class="imagenLogo">
 				  </a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
-				  	<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-				    	<ul class="navbar-nav font-weight-bolder">
-					      <li class="nav-item active">
-					        <a class="nav-link text-warning" href="#">Inicio <span class="sr-only">(current)</span></a>
+				  	<div class="collapse navbar-collapse font-weight-bold" id="navbarNav">
+				    	<ul class="navbar-nav">
+					      <li class="nav-item">
+					        <a class="nav-link color" href="#">Inicio</a>
 					      </li>
 					      <li class="nav-item">
-					        <a class="nav-link text-warning" href="views/Nosotros.html">Nosotros</a>
+					        <a class="nav-link color" href="views/Nosotros.html">Nosotros</a>
 					      </li>
 					      <li class="nav-item">
-					        <a class="nav-link text-warning" href="views/servicios.html">Servicios</a>
+					        <a class="nav-link color" href="views/servicios.html">Servicios</a>
 					      </li>
 					      <li class="nav-item">
-					        <a class="nav-link text-warning" href="views/galeria.html">Galeria</a>
+					        <a class="nav-link color" href="views/galeria.html">Galeria</a>
 					      </li>
 					      <li class="nav-item">
-					        <a class="nav-link text-warning" href="views/contacto.html">Contacto</a>
+					        <a class="nav-link color" href="views/contacto.html">Contacto</a>
 					      </li>
 				    	</ul>
   					</div>
 				</nav>
 			</div>
 		</header>	
+		<!-- Apertura main -->
 		<main class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 col-12 text-center flex">
-					<h1>PELUQUERIA CANINA</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum ipsa maiores temporibus. Consectetur obcaecati vel nemo aperiam quia autem dolore facere asperiores sit. Soluta eveniet expedita omnis officiis, adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam, debitis nesciunt nobis numquam non sed sint maiores amet tempore unde reprehenderit ut quod iusto vitae magni architecto voluptates neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores quae ipsum qui repudiandae nam ipsam, voluptas quasi, odio in dolores dicta dignissimos? Amet minus quidem doloremque laborum nihil, quod!
+				<div class="col-lg-6 col-12 flex">
+					<h1 class="mod_titulo">PELUQUERIA CANINA</h1>
+					<p class="text-center mod_texto text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum ipsa maiores temporibus. Consectetur obcaecati vel nemo aperiam quia autem dolore facere asperiores sit. Soluta eveniet expedita omnis officiis, adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam, debitis nesciunt nobis numquam non sed sint maiores amet tempore unde reprehenderit ut quod iusto vitae magni architecto voluptates neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores quae ipsum qui repudiandae nam ipsam, voluptas quasi, odio in dolores dicta dignissimos? Amet minus quidem doloremque laborum nihil, quod!
 					</p>
 				</div>		
 				<div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
@@ -70,25 +71,24 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 col-12 alineado d-flex justify-content-center">
-					<a href="views/Nosotros.html" class="text-secondary">
-		    			<h2 class="rounded-pill bg-success w-auto p-3">Conócenos mejor</h2>
+				<div class="col-lg-12 col-12 d-flex justify-content-center text-d-none pad_botonConocer">
+					<a href="views/Nosotros.html" class="rounded-pill bg-orange w-auto p-2 mod_botonConocer">Conócenos mejor
 		    		</a>
 				</div>	
 			</div>
 		</main>
-
-		<footer class="container-fluid bg-success">
+		<!-- Apertura footer -->
+		<footer class="container-fluid bg-lightGreen center">
 			<div class="row d-flex align-items-center">
 				<div class="col-lg-4 col-12">
 					<a href="#">
 						<img src="assets/img/logoPelu2.png" alt="logo" class="imagenLogo">
 					</a>					
 				</div>
-				<div class="col-lg-4 col-12 d-flex justify-content-center">
+				<div class="col-lg-4 col-12 d-flex justify-content-center color mod_nombreFoo">
 					<h2>Josefina Funes Quero</h2>
 				</div>
-				<div class=" col-lg-4 col-12 d-flex justify-content-center">
+				<div class=" col-lg-4 col-12 d-flex justify-content-center mod_redes">
 					<a href="https://www.facebook.com/dejandoloslindos" target="_blank">
 						<img src="assets/img/facebook.png" alt="logo facebook" class="footer__face">
 					</a>
@@ -98,8 +98,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 col-12 d-flex justify-content-center bg-dark text-muted font-size">
-					<h3>Todos los derechos reservados 2021-22</h3>
+				<div class="col-lg-12 col-12 d-flex justify-content-center bg-secondary text-light">
+					<h3 class="pieFooter">Todos los derechos reservados 2021-22</h3>
 				</div>
 		</footer>
 	</div>

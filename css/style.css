@@ -1,7 +1,4 @@
-*{
-	font-family: sans-serif;
-	margin: 0px;
-}
+
 
 /* modificacion header dos vistas 
 
@@ -635,30 +632,84 @@ main{
 
 }*/
 
+.bg-orange{
+	background-color: #FFB72B;
+}
+
+.bg-lightGreen{
+	background-color: #B5FE83;
+}
+
 .imagenLogo{
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 }
 
-.navbarNav ul{
-	text-align: right;
+/* Modificacion footer  */
+
+.pieFooter{
+	font-size: 15px;
+	margin-bottom: 0px;
 }
 
-.alineado{
+.mod_nombreFoo h2{
+	font-family: oswald;
+	font-size: 40px;
 	text-align: center;
 }
 
-.font-size h3{
-	font-size: 20px;
+.mod_redes img{
+	padding: 20px;
 }
 
-.flex{
+
+.flex{ /*centrado de texto index*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.img-sizing{
+.img-sizing{ /*modificacion tamaño imagen index*/
 	width: 90%;
 	height: 90%;
+}
+
+.mod_titulo{ /*personaliza titulo principal index*/
+	border-left: 5px solid #FFB72B;
+	font-family: oswald;
+	font-size: 60px;
+}
+
+.mod_texto{ 
+	font-family: noto sans;
+}
+
+.color{ /*retoque color items nav*/
+	text-shadow: 1px 1px 1px #F7F7F7;
+}
+
+.text-d-none a{ /*quita el subrayado de boton "conocenos mejor"*/
+	text-decoration: none;
+}
+
+.mod_botonConocer{ /*personaliza el boton "conocenos mejor"*/
+	font-weight: bold;
+	font-family: noto sans;
+	font-size: 20px;
+	color: #F7F7F7;
+}
+
+.pad_botonConocer{
+	padding: 5px;
+}
+
+@media only screen and (max-width: 768px){
+	.center{
+		text-align: center;
+	}
+
+	.mod_nombreFoo h2{
+		font-size: 30px;
+	}
+
 }
