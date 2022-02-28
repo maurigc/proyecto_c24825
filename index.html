@@ -25,30 +25,33 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid bg-light">
 		<!-- header -->
 		<header class="row">
 			<div class="col-lg-12 col-12">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<nav class="navbar navbar-expand-lg navbar-light bg-success align-items-end">
 				  <a class="navbar-brand" href="#">
-				  	<img src="assets/img/logoPelu2.png" alt="logo" class="imagenNav">
+				  	<img src="assets/img/logoPelu2.png" alt="logo" class="imagenLogo">
 				  </a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
-				  	<div class="collapse navbar-collapse" id="navbarNav">
-				    	<ul class="navbar-nav flex-nav">
+				  	<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+				    	<ul class="navbar-nav font-weight-bolder">
 					      <li class="nav-item active">
-					        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					        <a class="nav-link text-warning" href="#">Inicio <span class="sr-only">(current)</span></a>
 					      </li>
 					      <li class="nav-item">
-					        <a class="nav-link" href="#">Features</a>
+					        <a class="nav-link text-warning" href="views/Nosotros.html">Nosotros</a>
 					      </li>
 					      <li class="nav-item">
-					        <a class="nav-link" href="#">Pricing</a>
+					        <a class="nav-link text-warning" href="views/servicios.html">Servicios</a>
 					      </li>
 					      <li class="nav-item">
-					        <a class="nav-link disabled">Disabled</a>
+					        <a class="nav-link text-warning" href="views/galeria.html">Galeria</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-warning" href="views/contacto.html">Contacto</a>
 					      </li>
 				    	</ul>
   					</div>
@@ -57,34 +60,35 @@
 		</header>	
 		<main class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 col-12">
+				<div class="col-lg-6 col-12 text-center flex">
 					<h1>PELUQUERIA CANINA</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum ipsa maiores temporibus. Consectetur obcaecati vel nemo aperiam quia autem dolore facere asperiores sit. Soluta eveniet expedita omnis officiis, adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam, debitis nesciunt nobis numquam non sed sint maiores amet tempore unde reprehenderit ut quod iusto vitae magni architecto voluptates neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores quae ipsum qui repudiandae nam ipsam, voluptas quasi, odio in dolores dicta dignissimos? Amet minus quidem doloremque laborum nihil, quod!
 					</p>
 				</div>		
-				<div class="col-lg-6 col-12">
-					<img src="assets/img/perroPrincipal.png" alt="imagen fondo">
+				<div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+					<img src="assets/img/perroPrincipal.png" alt="imagen fondo" class="img-fluid shadow p-3 mb-5 bg-white rounded">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 col-12">
-					<a href="views/Nosotros.html">
-		    			<h2>Conócenos mejor</h2>
+				<div class="col-lg-12 col-12 alineado d-flex justify-content-center">
+					<a href="views/Nosotros.html" class="text-secondary">
+		    			<h2 class="rounded-pill bg-success w-auto p-3">Conócenos mejor</h2>
 		    		</a>
 				</div>	
 			</div>
 		</main>
 
-		<footer class="container-fluid">
-			<div class="row">
+		<footer class="container-fluid bg-success">
+			<div class="row d-flex align-items-center">
 				<div class="col-lg-4 col-12">
 					<a href="#">
-						<img src="assets/img/logoPelu2.png" alt="logo" class="imagenNav">
+						<img src="assets/img/logoPelu2.png" alt="logo" class="imagenLogo">
 					</a>					
 				</div>
-				<div class="col-lg-8 col-12">
-
+				<div class="col-lg-4 col-12 d-flex justify-content-center">
 					<h2>Josefina Funes Quero</h2>
+				</div>
+				<div class=" col-lg-4 col-12 d-flex justify-content-center">
 					<a href="https://www.facebook.com/dejandoloslindos" target="_blank">
 						<img src="assets/img/facebook.png" alt="logo facebook" class="footer__face">
 					</a>
@@ -94,7 +98,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 col-12">
+				<div class="col-lg-12 col-12 d-flex justify-content-center bg-dark text-muted font-size">
 					<h3>Todos los derechos reservados 2021-22</h3>
 				</div>
 		</footer>

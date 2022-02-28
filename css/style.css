@@ -635,11 +635,30 @@ main{
 
 }*/
 
-.imagenNav{
+.imagenLogo{
 	width: 150px;
 	height: 150px;
 }
 
 .navbarNav ul{
 	text-align: right;
+}
+
+.alineado{
+	text-align: center;
+}
+
+.font-size h3{
+	font-size: 20px;
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.img-sizing{
+	width: 90%;
+	height: 90%;
 }
