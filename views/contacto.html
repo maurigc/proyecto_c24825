@@ -4,131 +4,185 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contacto - Perruqueando</title>
+
 	<!-- noto sans font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@200&display=swap" rel="stylesheet">
+
 	<!-- oswald font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+	<!-- Link AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!--  Link bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	
+	<!-- link css -->
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-	<div class="contenidoPrincipal">
-		<header class="encabezado style">
-		    <!-- Apertura Logo -->
-			<div class="encabezado__logo">
-				<a href="../index.html">
-					<img src="../assets/img/logoPelu2.png" alt="logo">
-					<h1>Perruqueando</h1>
-				</a>	
+	<div class="container-fluid">
+
+		<!-- Apertura header -->
+
+		<header class="row">
+			<div class="col-lg-12 col-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-lightGreen d-flex align-items-end">
+				  <a class="navbar-brand" href="#">
+				  	<img src="../assets/img/logoPelu2.png" alt="logo" class="imagenLogo">
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  	<div class="collapse navbar-collapse font-weight-bold" id="navbarNav">
+				    	<ul class="navbar-nav">
+					      <li class="nav-item">
+					        <a class="nav-link color" href="../index.html">Inicio</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link color" href="Nosotros.html">Nosotros</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link color" href="servicios.html">Servicios</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link color" href="galeria.html">Galeria</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link color" href="#">Contacto</a>
+					      </li>
+				    	</ul>
+  					</div>
+				</nav>
 			</div>
-		    <!-- Cierre Logo -->
-		    <!-- Apertura Navegacion -->
-			<nav class="encabezado__nav">
-				<ul>
-					<li class="nav__item ">
-						<a href="../index.html">Inicio</a>
-					</li>
-					<li class="nav__item ">
-						<a href="Nosotros.html">Nosotros</a>
-					</li>
-					<li class="nav__item ">
-						<a href="servicios.html">Servicios</a>
-					</li>
-					<li class="nav__item ">
-						<a href="galeria.html">Galeria</a>
-					</li>
-					<li class="nav__item ">
-						<a href="#">Contacto</a>
-					</li>			
-				</ul>
-			</nav>
-		    <!-- Cierre Navegacion -->
 		</header>
-		<main class="contenedorContacto">
-			<div class="principal__contacto">
-				<!-- apertura titulo -->
-				<div class="titulo__contacto">
-					<h1>CONTACTANOS</h1>
+	</div>
+	
+	<!-- Apertura main -->
+
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-12 alineado">
+				<h1 class="mod_fuente">CONTACTANOS</h1>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-12 d-flex justify-content-center">
+
+				<!-- Apertura form -->
+
+				<form>
+					<div class="form-row">
+					    <div class="form-group col-md-6">
+					  		<label for="inputEmail4" class="mod_texto font-weight-bold">Nombre</label>
+					    	<input type="email" class="form-control" id="inputEmail4">
+						</div>
+						<div class="form-group col-md-6">
+						    <label for="inputPassword4" class="mod_texto font-weight-bold">Apellido</label>
+						    <input type="password" class="form-control " id="inputPassword4">
+						</div>
+					</div>
+					<div class="form-group">
+					 	<label for="inputAddress" class="mod_texto font-weight-bold">E-mail</label>
+					    <input type="text" class="form-control" id="inputAddress" placeholder="mail@mail.com">
+					</div>
+					<div class="form-check form-check-inline">
+					  	<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+					  	<label class="form-check-label font-weight-bold mod_texto" for="inlineCheckbox1">Turno</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  	<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+					  	<label class="form-check-label font-weight-bold mod_texto" for="inlineCheckbox2">Consulta</label>
+					</div>
+					<div class="form-group">
+					    <label for="exampleFormControlTextarea1" class="font-weight-bold mod_texto">Comentario:</label>
+					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</form>	  
+			</div>		
+
+			<!-- Apertura card contacto -->
+
+			<div class="col-lg-6 col-12">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row no-gutters align-items-center alineado">
+					    <div class="col-md-4">
+					      	<img src="../assets/img/ubicacionIcon.png" alt="...">
+					    </div>
+					 	<div class="col-md-8">
+					      	<div class="card-body">
+					        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301.09097425521765!2d-64.16980773786918!3d-31.374001178136137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299e0a4535245%3A0x981606991d1e9b8d!2sPerruqueando!5e0!3m2!1ses!2sar!4v1642978632400!5m2!1ses!2sar" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					      	</div>
+					    </div>  	
+					    <div class="col-md-4">
+					      	<img src="../assets/img/whatsappIcon.png" alt="...">
+					    </div>
+					 	<div class="col-md-8">
+					      	<div class="card-body">
+					        	<h5 class="card-title mod_texto font-weight-bold">23425343453</h5>
+					      	</div>
+					    </div>
+					    <div class="col-md-4">
+					      	<img src="../assets/img/mailIcon.png" alt="...">
+					    </div>
+					 	<div class="col-md-8">
+					      	<div class="card-body">
+					        	<h5 class="card-title mod_texto font-weight-bold">perruqueando@perruqueando.com</h5>
+					      	</div>
+					    </div>
+					</div>
 				</div>
-				<!-- cierre titulo -->
-				<div class="card__contacto">
-					<!-- apertura info contacto -->
-					<div class="ubi__contacto">
-						<img src="../assets/img/ubicacionIcon.png" alt="logo ubi">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301.09097425521765!2d-64.16980773786918!3d-31.374001178136137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299e0a4535245%3A0x981606991d1e9b8d!2sPerruqueando!5e0!3m2!1ses!2sar!4v1642978632400!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					</div>
-					<div class="telefono__contacto">
-						<img src="../assets/img/whatsappIcon.png" alt="logo telefono">
-						<h2>3516228393</h2>
-					</div>
-					<div class="mail__contacto">
-						<img src="../assets/img/mailIcon.png" alt="logo mail">
-						<h2>perruqueando@mail.com</h2>
-					</div>
-					<!-- cierre info contacto -->
-					<div class="horario__contacto">
-						<p>Horarios: Lun a Sabado de 9hs a 17hs.</p>
-					</div>
-					<!-- inicio formulario -->
-					<form action="#" class="formulario">
-						<label for="nombre" class="nombre__formulario paddingForm">
-							<input type="name" name="nombre" placeholder="Nombre y Apellido" class=" customBox">
-						</label>
-						<label for="mail" class="mail__formulario paddingForm">
-							<input type="name" name="mail" placeholder="mail@mail.com" class=" customBox" >
-						</label>
-						<div class="opcion__formulario paddingForm">
-						Turno
-							<input type="radio" name="opcion" value="turno">
-						Consulta
-							<input type="radio" name="opcion" value="atencion">	
-						</div>
-						<div class="comentario__formulario paddingForm">
-							<textarea name="comentario" id="" cols="55" rows="10" placeholder="Comentario" class="customBox"></textarea>
-						</div>
-						<div class="botones__formulario">
-							<input type="reset" value="resetear">
-							<input type="submit" value="enviar">
-						</div>
-					</form>
-					<!-- cierre formulario -->
-					<div class="imagen__contacto">
-						<img src="../assets/img/imagenContacto.jpg" alt="imagen contacto">
-					</div>
-				</div>	
-			</div>	
-		</main>	
+			</div>
+		</div>			
+		<div class="row justify-content-center pb-2">
+			<div class="col-lg-6 col-12">
+				<img src="../assets/img/imagenContacto.jpg" alt="imagen contacto" class="img-fluid shadow p-3 mb-5 bg-warning rounded" data-aos="fade-up">
+			</div>			
+		</div>				
+	</main>
+
 		<!-- apertura footer -->
-		<footer class="pie pieStyle">
-			<!-- apertura logo -->
-			<div class="footer__logo">
+
+	<footer class="container-fluid bg-lightGreen alineado">
+		<div class="row d-flex align-items-center">
+			<div class="col-lg-4 col-12">
 				<a href="#">
-					<img src="../assets/img/logoPelu2.png" alt="logo">
-				</a>
-			</div>	
-			<!--cierre logo -->
-			<!-- Apertura subtitulo footer -->
-			<div class="footer__nombre">
+					<img src="../assets/img/logoPelu2.png" alt="logo" class="imagenLogo">
+				</a>					
+			</div>
+			<div class="col-lg-4 col-12 d-flex justify-content-center color mod_nombreFoo">
 				<h2>Josefina Funes Quero</h2>
 			</div>
-			<!-- redes sociales -->
-			<div class="footer__redes">
+			<div class=" col-lg-4 col-12 d-flex justify-content-center mod_redes">
 				<a href="https://www.facebook.com/dejandoloslindos" target="_blank">
 					<img src="../assets/img/facebook.png" alt="logo facebook" class="footer__face">
 				</a>
 				<a href="https://www.instagram.com/perruqueando/tagged/" target="_blank">
 					<img src="../assets/img/instagram.png" alt="logo insta" class="footer__insta">
-				</a>
+				</a>	
 			</div>
-			<div class="footer__pie">
-				<h3>Todos los derechos reservados 2021-22</h3>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-12 d-flex justify-content-center bg-secondary text-light">
+				<h3 class="pieFooter">Todos los derechos reservados 2021-22</h3>
 			</div>
-		</footer>
-		<!-- cierre footer -->
-	</div>
+	</footer>
+
+	<!-- bootstrap y jqueri bundle -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	
+	<!-- script AOS animaciones -->
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
 	
 </body>
 </html>

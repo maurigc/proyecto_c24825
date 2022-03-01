@@ -7,6 +7,7 @@
 	background-color: #B5FE83;
 }
 
+
 .imagenLogo{
 	width: 100px;
 	height: 100px;
@@ -84,13 +85,13 @@
 	color: #FFB72B;
 }
 
+.alineado{
+	text-align: center;
+}
+
 /* Retoques para vista mobile */
 
 @media only screen and (max-width: 768px){
-	.center{
-		text-align: center;
-	}
-
 	.mod_nombreFoo h2{
 		font-size: 30px;
 	}
