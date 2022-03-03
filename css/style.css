@@ -24,12 +24,16 @@
 	font-family: oswald;
 	font-size: 40px;
 	text-align: center;
+	transition: font-size 1s;
+}
+
+.mod_nombreFoo h2:hover{
+	font-size: 50px;
 }
 
 .mod_redes img{
 	padding: 20px;
 }
-
 
 .flex{ /*centrado de texto index*/
 	display: flex;
@@ -88,6 +92,7 @@
 .alineado{
 	text-align: center;
 }
+
 
 /* Retoques para vista mobile */
 
